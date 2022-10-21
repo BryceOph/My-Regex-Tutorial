@@ -40,11 +40,11 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 PHP2:
-$email = "abc123@example.com"; 
+'$email = "abc123@example.com"; 
 $regex = '/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/'; 
 if (preg_match($regex, $email)) {
  echo $email . " is valid.";
-} 
+}' 
 
 Email Regex in JavaScript:
 function ValidateEmail(inputText)
@@ -154,7 +154,7 @@ The Escape Symbol : \
 If you want to match for the actual ‘+’, ‘.’ etc characters, add a backslash( \ ) before that character. This will tell the computer to treat the following character as a search character and consider it for matching pattern.
 Comment : (?# comment) –
 Inline comment: The comment ends at the first closing parenthesis.
-'#' [to end of line] : X-mode comment. The comment starts at an unescaped # and continues to the end of the line.
+* '#' [to end of line] : X-mode comment. The comment starts at an unescaped # and continues to the end of the line.
 ## Author
 
 Hi my name is Bryce Oparah and I hope this guide helps you understand regex a bit better.
